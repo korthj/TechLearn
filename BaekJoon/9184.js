@@ -8,11 +8,11 @@ const arr = input.map(v=>v.split(' ').map(v=>+v));
 let memo = [];
 
 function start(){
-    for(let i =0; i<=101; i++){
+    for(let i=0; i <= 101; i++){
         memo[i]=[];
-        for(let j =0; j<=101; j++){
+        for(let j=0; j <= 101; j++){
             memo[i][j]=[];
-            for(let k=0; k<=101; k++){
+            for(let k=0; k <= 101; k++){
                 memo[i][j][k]=0;
             }
         }
