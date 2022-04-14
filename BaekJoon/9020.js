@@ -4,7 +4,7 @@ input.shift();
 const MAX = Math.max(...input);
 const answer = [];
 
-//제일 큰 값보다 하나 많은 사이즈의 배열 생성 후 트루로 채워줌
+//배열 생성하고 차후 소수를 판별 위해 트루로 채워줌
 let prime = new Array(MAX + 1).fill(true);
 
 //소수와 아닌수를 구한다.
