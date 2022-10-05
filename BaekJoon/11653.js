@@ -1,11 +1,18 @@
-const input = require("fs").readFileSync('dev/stdin').toString().split("\n");
-
-let num = input[0];
-
-for (let i = 2; i <= Math.sqrt(num); i++) {
-  while (num % i === 0) {
-    console.log(i);
-    num /= i;
+const input = require('fs').readFileSync('/dev/stdin').toString().split(' ');
+let num = parseInt(input[0]);
+ 
+let i = 2;
+let primes = []
+while (true) {
+  if (num % i === 0) {
+    num = num / i
+    primes.push(i)
+    i = 1;
+  }
+  i++;
+  if (i > num) {
+    break;
   }
 }
-if (num !== 1) console.log(num);
+ 
+console.log(primes.join("\n"));
