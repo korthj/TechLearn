@@ -1,5 +1,5 @@
-const fs = require('fs');
-const input = fs.readFileSync("testInput.txt").toString().trim().split("\n").map(v=>v.trim()); 
+const input = require('fs').readFileSync("testInput.txt").toString().trim().split("\n").map(v=>v.trim()); 
+input.shift();
 const arr = input.map(v=>v.split(' ').map(x=>+x))
 const result = arr.sort((a,b)=>{
   if(a[1]>b[1]){
