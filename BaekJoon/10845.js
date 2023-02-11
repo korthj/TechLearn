@@ -1,4 +1,4 @@
-//10845번 큐 문제, 스위치문을 사용하여 풀었고 결과는 다른 이들에 비해 속도는 조금 더 빠르지만 메모리를 조금 더 많이 사용한다.
+//10845번 큐 문제, 스위치문을 사용하여 풀었고 결과는 다른 이들에 비해 속도는 25% 정도 빠르지만 메모리를 10% 정도 더 사용한다.
 let [ N,...input ] = require("fs").readFileSync("testInput.txt").toString().trim().split("\n").map(v => v.split(" "));
 
 const queue = [];
