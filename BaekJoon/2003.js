@@ -7,6 +7,7 @@ let result = 0;
 for(let i = 0; i<N; i++){
   let sum = 0;
   for(let j = i; j<N; j++){
+    //모든 수를 탐색, i값의 증가로 앞에서 부터 하나씩 인덱스를 올려가며 모든 수를 더한다.
     sum+=input[0][j];
     if(sum==M) result++;
   };
