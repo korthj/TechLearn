@@ -1,4 +1,4 @@
-//11656번 접미사 배열 문제
+//11656번 접미사 배열 문제, unshift,pop 이용하여 맨 뒤부터 새 배열 앞에 삽입하여 생성하는 식으로 간단하게 해결
 const filePath = process.platform === "linux" ? "/dev/stdin" : "testInput.txt";
 const input = require("fs").readFileSync(filePath).toString().trim().split("");
 
@@ -6,7 +6,6 @@ const stack = [...input];
 const tmp = [];
 let answer = [];
 for(let i = 0; i < input.length; i++){
-    //unshift 사용하여 배열 맨 앞에 추가.
     tmp.unshift(stack.pop());
     answer.push(tmp.join("").trim());
 };
