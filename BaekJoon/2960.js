@@ -1,4 +1,4 @@
-//2960번 에라토스테네스의 체 문제
+//2960번 에라토스테네스의 체 문제, 지운 숫자의 갯수를 출력하는 문제
 const filePath = process.platform === "linux" ? "/dev/stdin" : "testInput.txt";
 const [n,k] = require("fs").readFileSync(filePath).toString().trim().split(" ").map(Number);
 
