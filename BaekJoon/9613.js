@@ -1,4 +1,4 @@
-//9613번 GCD(최대 공약수) 합 문제, 유클리드 호제법 풀이
+//9613번 GCD(최대 공약수) 합 문제, 유클리드 호제법 풀이 -> ex)GCD(24, 16) = GCD(16, 8) = GCD(8, 0)
 const filePath = process.platform === "linux" ? "/dev/stdin" : "testInput.txt";
 const [t,...arr] = require("fs").readFileSync(filePath).toString().trim().split("\n").map(v => v.split(" ").map(Number));
 
