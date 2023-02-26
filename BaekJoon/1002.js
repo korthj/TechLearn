@@ -39,4 +39,4 @@ function findPointsCount(dist, r1, r2) {
       return 2;
     };
   };
-};
+}; 
