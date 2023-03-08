@@ -9,7 +9,7 @@ while(width > 1) {
         for(let j = 0; j <= M-width; j++) {
             let num = input[i][j];
 
-            // 꼭짓점 3군데 비교
+            // 꼭짓점 3군데 비교, 순서대로 우상단,좌하단,우하단
             if(num==input[i][j+width-1] && num == input[i+width-1][j] && num == input[i+width-1][j+width-1]) {
                 console.log(width*width);
                 return;
