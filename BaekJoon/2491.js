@@ -22,4 +22,4 @@ for(let i = 0; i < N; i++) {
     };
     answer = Math.max(desc, answer); 
 };
-console.log(answer.toString());
+console.log(answer);
