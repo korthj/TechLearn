@@ -3,10 +3,10 @@ const [N,...input] = require("fs").readFileSync("testInput.txt").toString().spli
 let result = 0;
 
 //내림차순 정렬해주지 않으면 오답.
-const arr = input.sort((a,b) => b-a);
+input.sort((a,b) => b-a);
 
 for(let i=0; i<N; i++){
-    const num = arr[i] - ((i+1)-1);
+    const num = input[i] - ((i+1)-1);
     if(num > 0) result += parseInt(num);
     else if(num <= 0) break;
 };
