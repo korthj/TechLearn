@@ -3,6 +3,18 @@ const [T,...input] = require("fs").readFileSync("testInput.txt").toString().trim
 
 let result = [];
 
+const main = (i) => {
+    let testCase = input[i*2+1].split(" ").map(Number);
+  
+    result.push(maxSubArray(testCase));
+};
+
+for(let i = 0; i < T; i++){
+    main(i);
+};
+
+console.log(result.join("\n").toString());
+
 function maxSubArray(nums) {
     //
     let maxSum = nums[0]; //총 최대값
@@ -15,15 +27,3 @@ function maxSubArray(nums) {
     };
     return maxSum;
 };
-
-const main = (i) => {
-    let testCase = input[i*2+1].split(" ").map(Number);
-  
-    result.push(maxSubArray(testCase));
-};
-
-for(let i = 0; i < T; i++){
-    main(i);
-};
-
-console.log(result.join("\n").toString());
